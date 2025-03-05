@@ -24,7 +24,63 @@ header {
     padding-bottom: 20px;
 } 
 
-nav {
+/* Yuklangan kod */
+
+nav{
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--hover-color);
+  }
+  nav ul{
+    list-style: none;
+    display: flex;
+  }
+  nav .home-li{
+    margin-right: auto;
+  }
+  nav li{
+    display: flex;
+  }
+  nav a{
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1em 2em;
+    transition: background-color 150ms ease;
+  }
+  nav a:hover{
+    background-color: var(--hover-color);
+  }
+  nav a.active-link{
+    border-bottom: 2px solid var(--text-color);
+  }
+  nav a.accent-link{
+    background-color: var(--accent-color);
+  }
+  #open-sidebar-button{
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  #close-sidebar-button{
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #overlay{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+  }
+
+/* o'zmni kodim */
+/* nav {
     background-color: black;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -40,28 +96,28 @@ nav li {
 
 #open-sidebar-button {
     display: none; /* Ensure it is always displayed */
-    font-size: 24px;
+    /* font-size: 24px;
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1000; /* Ensure it is above other elements */
-}
+    z-index: 1000; Ensure it is above other elements */
 
-#close-sidebar-button {
+
+/* #close-sidebar-button {
     display: none;
     background: none;
     border: none;
     padding: 1em;
     cursor: pointer;
-}
+} */
 
-#overlay {
+/* #overlay {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     inset: 0;
     z-index: 9;
     display: none;
-}
+} */ 
 
 .img1 {
     width: 120px;
@@ -87,13 +143,13 @@ nav li {
     opacity: 1; /* Ensure opacity */
 }
 
-.sidebar li {
+/* .sidebar li {
     width: 100%;
 }
 
 .sidebar a {
     width: 100%;
-}
+} */
 
 .links {
     padding: 1em 3em;
@@ -469,6 +525,10 @@ input {
 
 /* Media Queries */
 @media (max-width: (300-400px)) {
+    
+    .img3 {
+        display: none;
+    }
     #open-sidebar-button, #close-sidebar-button{
         display: block;
       }

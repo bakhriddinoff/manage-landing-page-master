@@ -11,23 +11,33 @@
 
 </head>
 <body>
+
   <img class="img3" src="./images/bg-tablet-pattern.svg" alt="bg-tablet-pattern">
   <header class="container">
     <img class="img1" src="./images/logo.svg" alt="logo">
 
 
-    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar"><img src="./images/icon-hamburger.svg" alt="close"></button>
-    <nav id="navbar">
-      <ul class="sidebar"> 
-        <li><a id="links" class="links" href="#">Pricing</a></li>
-        <li><a id="links" class="links" href="#">Product</a></li>
-        <li><a id="links" class="links" href="#">About Us</a></li>
-        <li><a id="links" class="links" href="#">Careers</a></li>
-        <li><a id="links" class="links" href="#">Community</a></li>
-        <button onclick=closeSidebar() id="close-sidebar-button" aria-label="close sidebar"><img src="./images/icon-close.svg" viewBox="0 96 960 960" alt="open"></button>
-      </ul>
+  <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+    <img src="./images/icon-hamburger.svg" alt="icon">
+  </button>
+
+  <nav id="navbar">
+    <ul>
+      <li>
+        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+          <img src="./images/icon-close.svg" alt="icon">
+        </button>
+      </li>
+      <li><a id="links" class="links" href="#">Pricing</a></li>
+      <li><a id="links" class="links" href="#">Product</a></li>
+      <li><a id="links" class="links" href="#">About Us</a></li>
+      <li><a id="links" class="links" href="#">Careers</a></li>
+      <li><a id="links" class="links" href="#">Community</a></li>
+  </ul>
+  </nav>
+  
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
     </nav>
-    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
     <button class="btn1">Get Started</button>
   </header>
 
