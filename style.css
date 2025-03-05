@@ -468,7 +468,7 @@ input {
 }
 
 /* Media Queries */
-@media (max-width: 400px) {
+@media (max-width: (300-400px)) {
     #open-sidebar-button, #close-sidebar-button{
         display: block;
       }
@@ -492,7 +492,7 @@ input {
         width: 100%;
         flex-direction: column;
       }
-      nav a{
+      .links{
         width: 100%;
         padding-left: 2.5em; 
         color: white;
