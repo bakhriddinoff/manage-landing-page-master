@@ -399,3 +399,19 @@ input {
     font-size: 14px;
 }
 
+/* Media Query */
+
+@media (min-width: 300px) and (max-width: 400px) {
+    header {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .text1 {
+        font-size: 14px;
+    }
+
+}
