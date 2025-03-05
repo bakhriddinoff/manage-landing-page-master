@@ -29,12 +29,11 @@ function closeSidebar(){
   navbar.setAttribute('inert', '')
 }
 
-// For Bookmark Links
-// const navLinks = document.querySelectorAll('nav a')
-// navLinks.forEach(link => {
-//   link.addEventListener('click', () => {
-//     closeSidebar()
-//   })
-// })
+const navLinks = document.querySelectorAll('nav a')
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeSidebar()
+  })
+})
 
 updateNavbar(media)

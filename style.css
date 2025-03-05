@@ -24,6 +24,10 @@ header {
     padding-bottom: 20px;
 } 
 
+.open {
+    display: none;
+}
+
 nav {
     display: flex;
     gap: 20px;
@@ -193,7 +197,7 @@ h1 {
 .cards-item1 {
     width: 30%;
     min-width: 530px;
-    scroll-snap-type: start;
+    scroll-snap-align: start;
     height: 250px;
     background-color: rgb(250, 250, 250);
     padding: 20px;
@@ -212,7 +216,7 @@ h1 {
 .cards-item2 {
     width: 30%;
     min-width:530px;
-    scroll-snap-type: start;
+    scroll-snap-align: start;
     height: 250px;
     background-color: rgb(250, 250, 250);
     padding: 20px;
@@ -232,7 +236,7 @@ h1 {
 .cards-item3 {
     width: 30%;
     min-width: 530px;
-    scroll-snap-type: start;
+    scroll-snap-align: start;
     height: 250px;
     background-color: rgb(250, 250, 250);
     padding: 20px;
@@ -252,7 +256,7 @@ h1 {
 .cards-item4 {
     width: 30%;
     min-width: 530px;
-    scroll-snap-type: start;
+    scroll-snap-align: start;
     height: 250px;
     background-color: rgb(250, 250, 250);
     padding: 20px;
@@ -398,20 +402,272 @@ input {
     font-weight: normal;
     font-size: 14px;
 }
+.br {
+    display: none;
+}
+
+.one {
+    display: none;
+}
+.two {
+    display: none;
+}
+.three {
+    display: none;
+}
+
+.num1 {
+    font-size: 18px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(241, 98, 55);
+    border-radius: 20px;
+    text-align: center;
+}
+
+
 
 /* Media Query */
 
 @media (min-width: 300px) and (max-width: 400px) {
+    body {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        margin-top: 0;
+        width: 250px;
+        padding: 0;
+        margin-left: 20px;
+    }
     header {
-        width: 300px
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 300px;
+        gap: 120px;
+        padding: 0;
+    }
+    .img1 {
+        width: 70px;
+        height: 14px;
+        margin: 0;
+    }
+    .open {
+        position: relative;
+        z-index: 999;
+        display: block;
+    }
+
+    .links {
+        display: none;
+        font-size: 11px;
+    }
+
+    .img2 {
+       width: 300px;
+    }
+    .img3 {
+        width: 500px;
+        top: -130px;
+        left: 80px;
+    }
+
+    .btnn {
+        display: none;
+    }
+
+    .btn1 {
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+        margin-left: 40px;
+        margin-bottom: 10px;
     }
-
+    .heroes {
+        gap: 10px;
+        flex-direction: column-reverse;
+    }
+    .leftH {
+        margin: 0;
+        padding: 0;
+    }
+    .rightH {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .text1 {
+        text-align: center;
+        width: 150%;
+        margin: 0;
+        padding: 10px;
         font-size: 14px;
-    }
 
+    }
+    .resposnive-br {
+        display: none;
+    }
+    .br {
+        display: block;
+    }
+    .leftH {
+        width: 100%;
+    }
+    .btn2 {
+        margin-left: 125px;
+        justify-self: center;
+    }
+    .section2 {
+        flex-direction: column;
+    }
+    .num {
+        width: 100px;
+    }
+    .one1 {
+        height: 35px;
+        display: block;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;    
+    }
+    .two2 {
+        height: 35px;
+        display: block;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;    
+    }
+    .three3 {
+        height: 35px;
+        display: block;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;    
+    }
+    .heading2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .function {
+        display: flex;
+        width: 200%;
+    }
+    .headingcha {
+        padding-right: 90px;
+        text-align: center;
+        height: 35px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 318px;
+        background-color: rgb(255, 239, 234);
+
+    }
+    .textt {
+        position: relative;
+        z-index: 999;
+    }
+    .imgg{
+        display: none;
+    }
+    .heading1 {
+        font-size: 28px;
+        width: 100%;
+        margin-left: 70px;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    .texttinho {
+        width: 110%;
+        margin-left: 45px;
+    }
+    .headingjon {
+        margin: 0;
+        margin-left: 50px;
+    }
+    .section3 {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    .cards {
+        margin-left: 50px;
+        width: 100%;
+    }
+    .cards-item1 {
+        min-width: 310px;
+        height: 200px;
+    }
+    .cards-item2 {
+        min-width: 310px;
+        height: 200px;
+    }
+    .cards-item3 {
+        min-width: 310px;
+        height: 200px;
+    }
+    .cards-item4 {
+        min-width: 310px;
+        height: 200px;
+    }
+    .imground1 {
+        width: 50px;
+        height: 50px;
+        top: -30px; 
+        left: 120px;
+    }
+    .text2 {
+        font-size: 12px;
+        margin: 0;
+        text-align: start;
+        padding-bottom: 20px;
+        width: 110%;
+    }
+    .heading {
+        margin-top: 20px;
+    }
+    .btn {
+        margin-top: 30px;
+        margin-left: 150px;
+
+    }
+    .imgjon {
+        display: none;
+    }
+    .section4 {
+        width: 390px;
+        height: 400px;  
+        display: flex;
+        flex-direction: column;
+    }
+    .headingjon1 {
+        font-size: 26px;
+        margin-left: 90px;
+    }
+    .btnjon {
+        width: 150px;
+    }
+    .section5 {
+        height: 900px;
+        width: 390px;
+    }
+    .wrapper-link {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .linkings {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    } 
 }
