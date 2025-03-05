@@ -24,147 +24,24 @@ header {
     padding-bottom: 20px;
 } 
 
-/* Yuklangan kod */
-
-nav{
-    background-color: var(--primary-color);
-    border-bottom: 1px solid var(--hover-color);
-  }
-  nav ul{
-    list-style: none;
+nav {
     display: flex;
-  }
-  nav .home-li{
-    margin-right: auto;
-  }
-  nav li{
-    display: flex;
-  }
-  nav a{
-    display: flex;
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 1em 2em;
-    transition: background-color 150ms ease;
-  }
-  nav a:hover{
-    background-color: var(--hover-color);
-  }
-  nav a.active-link{
-    border-bottom: 2px solid var(--text-color);
-  }
-  nav a.accent-link{
-    background-color: var(--accent-color);
-  }
-  #open-sidebar-button{
-    display: none;
-    background: none;
-    border: none;
-    padding: 1em;
-    margin-left: auto;
-    cursor: pointer;
-  }
-  #close-sidebar-button{
-    display: none;
-    background: none;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
-  }
-  #overlay{
-    background: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    inset: 0;
-    z-index: 9;
-    display: none;
-  }
-
-/* o'zmni kodim */
-/* nav {
-    background-color: black;
-    border-bottom: 1px solid #f0f0f0;
+    gap: 20px;
 }
-
-nav ul{
-    list-style: none;
-    display: flex;
-}
-
-nav li {
-    display: flex;
-}
-
-#open-sidebar-button {
-    display: none; /* Ensure it is always displayed */
-    /* font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1000; Ensure it is above other elements */
-
-
-/* #close-sidebar-button {
-    display: none;
-    background: none;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
-} */
-
-/* #overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    inset: 0;
-    z-index: 9;
-    display: none;
-} */ 
 
 .img1 {
     width: 120px;
     height: 20px;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 300px;
-    background-color: rgb(241, 98, 55);
-    padding-top: 50px;
-    transition: 0.5s;
-    z-index: 999;
-    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    visibility: visible; /* Ensure visibility */
-    opacity: 1; /* Ensure opacity */
-}
-
-/* .sidebar li {
-    width: 100%;
-}
-
-.sidebar a {
-    width: 100%;
-} */
-
 .links {
-    padding: 1em 3em;
-    display: flex;
+    position: relative;
     z-index: 999;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(36, 45, 82);
     font-weight: 600;
     font-size: 18px;
-    transition: backgorund-color 150ms ease;
-}
-
-.links:hover {
-    background-color: #f0f0f0;
 }
 
 .links:hover {
@@ -474,7 +351,6 @@ h1 {
     text-decoration: none;
     color: grey;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 
 .linkcha:hover {
@@ -523,38 +399,3 @@ input {
     font-size: 14px;
 }
 
-/* Media Queries */
-@media (max-width: (300-400px)) {
-    
-    .img3 {
-        display: none;
-    }
-    #open-sidebar-button, #close-sidebar-button{
-        display: block;
-      }
-      nav{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: min(15em, 100%);
-        z-index: 10;
-        border-left: 1px solid var(--hover-color);
-        transition: right 300ms ease-in-out;
-      }
-      nav.show{
-        right: 0;
-      }
-      nav.show ~ #overlay{
-        display: block;
-      }
-      nav ul{
-        width: 100%;
-        flex-direction: column;
-      }
-      .links{
-        width: 100%;
-        padding-left: 2.5em; 
-        color: white;
-      }
-}
