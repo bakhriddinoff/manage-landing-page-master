@@ -494,6 +494,7 @@ input {
       }
       nav a{
         width: 100%;
-        padding-left: 2.5em;
+        padding-left: 2.5em; 
+        color: white;
       }
 }
