@@ -16,15 +16,37 @@
   <!-- HEADER -->
   <header class="container">
     <img class="img1" src="./images/logo.svg" alt="logo">
-    <nav id="navbar">
-      <a class="links" href="#">Pricing</a>
-      <a class="links" href="#">Product</a>
-      <a class="links" href="#">About Us</a>
-      <a class="links" href="#">Careers</a>
-      <a class="links" href="#">Community</a>
+    <nav>
+      <a class="linkss" href="#">Pricing</a>
+      <a class="linkss" href="#">Product</a>
+      <a class="linkss" href="#">About Us</a>
+      <a class="linkss" href="#">Careers</a>
+      <a class="linkss" href="#">Community</a>
     </nav>
-    <button class="open"><img src="./images/icon-hamburger.svg" alt="" class=""></button>
-    <button class="btnn btn1">Get Started</button>
+
+    <!-- Hamburger -->
+    <div class="hamburger">
+      <div class="off-screen-menu">
+        <ul class="ham-menu-ul">
+          <li><a class="links" href="#">Product</a></li>
+          <li><a class="links" href="#">About Us</a></li>
+          <li><a class="links" href="#">Careers</a></li>
+          <li><a class="links" href="#">Pricing</a></li>
+          <li><a class="links" href="#">Community</a></li>   
+        </ul>
+      </div>
+
+      <nav class="nav-bar">
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+    </div>
+
+    <button class="btnn btn1">Get Started</button>      
   </header>
 
   <!-- HEROES -->
@@ -40,7 +62,7 @@
   </div>
 
   <!-- SECTION2 -->
-<section class="section2 container">
+<section class="section2 containerQuery">
   <div class="leftH2">
     <h2 class="heading1">What’s different <br class="br"> about <br class="resposnive-br"> Manage?</h2>
     <p class="text1">  Manage provides all the functionality your <br> team needs, without the complexity. Our <br> software is tailor-made for modern digital <br> product teams.</p>  
@@ -150,7 +172,7 @@
   </section>
 </footer>
 
-  <script src="javascript.js"></script>
+  <script src="./javascript.js"></script>
   
 </body>
 </html>

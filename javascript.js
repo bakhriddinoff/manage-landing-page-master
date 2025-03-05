@@ -1,39 +1,9 @@
-const openButton = document.getElementById('open-sidebar-button')
-const navbar = document.getElementById('navbar')
+const hamMenu = document.querySelector('.ham-menu');
 
-const media = window.matchMedia("(width < 700px)")
+const offScreen = document.querySelector('.off-screen-menu');
 
-media.addEventListener('change', (e) => updateNavbar(e))
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');     
+    offScreen.classList.toggle('active');
+});
 
-function updateNavbar(e){
-  const isMobile = e.matches
-  console.log(isMobile)
-  if(isMobile){
-    navbar.setAttribute('inert', '')
-  }
-  else{
-    // desktop device
-    navbar.removeAttribute('inert')
-  }
-}
-
-function openSidebar(){
-  navbar.classList.add('show')
-  openButton.setAttribute('aria-expanded', 'true')
-  navbar.removeAttribute('inert')
-}
-
-function closeSidebar(){
-  navbar.classList.remove('show')
-  openButton.setAttribute('aria-expanded', 'false')
-  navbar.setAttribute('inert', '')
-}
-
-const navLinks = document.querySelectorAll('nav a')
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    closeSidebar()
-  })
-})
-
-updateNavbar(media)
