@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Manage landing page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <img class="img3" src="./images/bg-tablet-pattern.svg" alt="bg-tablet-pattern">
+  <header class="container">
+    <img class="img1" src="./images/logo.svg" alt="logo">
+
+
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar"><img src="./images/icon-hamburger.svg" alt="close"></button>
+    <nav id="navbar">
+      <ul class="sidebar"> 
+        <li><a id="links" class="links" href="#">Pricing</a></li>
+        <li><a id="links" class="links" href="#">Product</a></li>
+        <li><a id="links" class="links" href="#">About Us</a></li>
+        <li><a id="links" class="links" href="#">Careers</a></li>
+        <li><a id="links" class="links" href="#">Community</a></li>
+        <button onclick=closeSidebar() id="close-sidebar-button" aria-label="close sidebar"><img src="./images/icon-close.svg" viewBox="0 96 960 960" alt="open"></button>
+      </ul>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <button class="btn1">Get Started</button>
+  </header>
+
+  <div class="heroes container">
+    <div class="leftH">
+      <h1>Bring everyone <br> together to build <br> better products.</h1>
+      <p class="text1">Manage makes it simple for software teams <br> to plan day-to-day tasks while keeping the <br> larger team goals in view.</p>
+      <button class="btn1 btn2">Get Started</button>
+    </div>
+    <div class="rightH">
+      <img class="img2" src="./images/illustration-intro.svg" alt="imgs">
+    </div>
+  </div>
+
+<section class="section2 container">
+  <div class="leftH2">
+    <h2 class="heading1">What’s different about <br> Manage?</h2>
+    <p class="text1">  Manage provides all the functionality your <br> team needs, without the complexity. Our <br> software is tailor-made for modern digital <br> product teams.</p>  
+  </div>
+
+  <div class="nums">
+    <p class="one num">01</p>
+    <p class="two num">02</p>
+    <p class="three num">03</p>
+  </div>
+  <div class="righH2">
+    <h3 class="heading2">Track company-wide progress</h3>
+    <p class="text1">See how your day-to-day tasks fit into the wider vision. <br> Go from tracking progress at the milestone level all the <br> way done to the smallest of details. Never lose sight of <br> the bigger picture again.</p>
+    <h3 class="heading2">Advanced built-in reports</h3>
+    <p class="text1">  Set internal delivery estimates and track progress toward <br> company goals. Our customisable dashboard helps you <br> build out the reports you need to keep key stakeholders<br> informed.</p>
+    <h3 class="heading2">Everything you need in one place</h3>
+    <p class="text1">  Stop jumping from one service to another to <br> communicate, store files, track tasks and share <br> documents. Manage offers an all-in-one team <br> productivity solution.</p>
+  </div>
+</section>
+
+<section class="section3">
+  <img class="imgg" src="./images/bg-tablet-pattern.svg" alt="">
+  <h2 class="heading1 headingjon">  What they’ve said</h2>
+  <div class="cards">
+    <div class="cards-item1">
+      <img class="imground1" src="./images/avatar-anisha.png" alt="anisha">
+      <h3 class="heading2 heading">Anisha Li</h3>
+      <p class="text1 text2">“Manage has supercharged our team’s workflow. The <br> ability to maintain visibility on larger milestones at all times <br> keeps everyone motivated.”</p>
+    </div>
+    <div class="cards-item2">
+      <img class="imground1" src="./images/avatar-ali.png" alt="ali">
+      <h3 class="heading2 heading">Ali Bravo</h3>
+      <p class="text1 text2">  “We have been able to cancel so many other subscriptions <br> since using Manage. There is no more cross-channel <br> confusion and everyone is much more focused.”</p>
+    </div>
+    <div class="cards-item3">
+      <img class="imground1" src="./images/avatar-richard.png" alt="richard">
+      <h3 class="heading2 heading">Richard Watts</h3>
+      <p class="text1 text2">“Manage allows us to provide structure and process. It <br> keeps us organized and focused. I can’t stop recommending <br> them to everyone I talk to!”</p>
+    </div>
+    <div class="cards-item4">
+      <img class="imground1" src="./images/avatar-shanai.png" alt="shanai">
+      <h3 class="heading2 heading">Shanai Gough</h3>
+      <p class="text1 text2">  “Their software allows us to track, manage and collaborate <br> on our projects from anywhere. It keeps the whole <br> team in-sync without being intrusive.”</p>
+    </div>
+  </div>
+  <button class="btn1 btn">Get Started</button>
+</section>
+
+
+<footer>
+  <section class="section4">
+    <img src="./images/bg-simplify-section-desktop.svg" alt="rasm" class="imgjon">
+    <h2 class="headingjon1">Simplify how your team <br> works today.</h2>
+    <button class="btnjon">Get Started</button>
+  </section>
+  <section class="section5">
+    <div class="wrapper-link">
+      <div class="links1">
+        <img class="img1" src="./images/logo.svg" alt="logo">
+        <div class="links-item">
+          <img src="images/icon-facebook.svg" alt="facebook">
+          <img src="images/icon-youtube.svg" alt="youtube">
+          <img src="images/icon-twitter.svg" alt="twitter">
+          <img src="images/icon-pinterest.svg" alt="pinterest">
+          <img src="images/icon-instagram.svg" alt="instagram">
+        </div>
+      </div>
+      <div class="links2">
+        <a href="#" class="linkcha">Home</a>
+        <a href="#" class="linkcha">Pricing</a>
+        <a href="#" class="linkcha">Products</a>
+        <a href="#" class="linkcha">Aboout us</a>
+      </div>
+      <div class="links2">
+        <a href="#" class="linkcha">Careers</a>
+        <a href="#" class="linkcha">Community</a>
+        <a href="#" class="linkcha">Privacy Policy</a>
+      </div>
+      <div class="links4">
+        <div class="linksR">
+          <form action="#">
+            <input type="text" placeholder="Updates in your inbox…">
+            <input class="btn3" type="submit" value="Go" placeholder="Go">
+          </form>  
+        </div>
+        <div class="linksL">
+          <p class="text1 textjon">© 2020 Manage. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+  <script src="./javascript.js"></script>
+</body>
+</html>
